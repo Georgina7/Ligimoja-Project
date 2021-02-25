@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="509.0" prefWidth="306.0" style="-fx-background-color: #281E5D;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trial.fxml.EmployeeLandingController">
+   <children>
+      <TitledPane alignment="CENTER" animated="false" collapsible="false" text="LIGIMOJA" textAlignment="CENTER">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="509.0" prefWidth="306.0" style="-fx-background-color: #281E5D;">
+               <children>
+                  <TabPane prefHeight="510.0" prefWidth="308.0" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                      <Tab id="myJobs" closable="false" style="-fx-background-color: #FD3A2D;" text="Completed">
+                           <content>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <Button layoutX="227.0" layoutY="442.0" mnemonicParsing="false" onAction="#loginScene" prefHeight="25.0" prefWidth="67.0" style="-fx-background-color: #FD3A2D;" text="Logout">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Button>
+                                    <TableView fx:id="completedJobs" layoutX="25.0" layoutY="64.0" prefHeight="200.0" prefWidth="258.0">
+                                       <columns>
+                                          <TableColumn fx:id="completedJobID" prefWidth="36.0" text="ID" />
+                                          <TableColumn fx:id="completedDate" prefWidth="84.0" text="Date" />
+                                          <TableColumn fx:id="completedWage" prefWidth="58.0" text="Wage" />
+                                          <TableColumn fx:id="completedLocation" prefWidth="79.0" text="Location" />
+                                       </columns>
+                                    </TableView>
+                                    <Label layoutX="70.0" layoutY="295.0" text="Double-click row to view details" textFill="#fd3a2d" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                      </Tab>
+                      <Tab id="allJobs" closable="false" style="-fx-background-color: #FD3A2D;" text="Booked">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <Button layoutX="227.0" layoutY="442.0" mnemonicParsing="false" onAction="#loginScene" prefHeight="25.0" prefWidth="67.0" style="-fx-background-color: #FD3A2D;" text="Logout">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Button>
+                                    <TableView fx:id="bookedJobs" layoutX="25.0" layoutY="64.0" prefHeight="200.0" prefWidth="258.0">
+                                       <columns>
+                                          <TableColumn fx:id="bookedJobID" prefWidth="36.0" text="ID" />
+                                          <TableColumn fx:id="bookedDate" prefWidth="84.0" text="Date" />
+                                          <TableColumn fx:id="bookedWage" prefWidth="58.0" text="Wage" />
+                                          <TableColumn fx:id="bookedLocation" prefWidth="79.0" text="Location" />
+                                       </columns>
+                                    </TableView>
+                                    <Label layoutX="70.0" layoutY="295.0" text="Double-click row to view details" textFill="#fd3a2d" />
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                        <Tab id="allJobs" closable="false" style="-fx-background-color: #FD3A2D;" text="New Jobs">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <Button layoutX="227.0" layoutY="442.0" mnemonicParsing="false" onAction="#loginScene" prefHeight="25.0" prefWidth="67.0" style="-fx-background-color: #FD3A2D;" text="Logout">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Button>
+                                    <TableView fx:id="allJobs" layoutX="25.0" layoutY="64.0" prefHeight="200.0" prefWidth="258.0">
+                                      <columns>
+                                        <TableColumn fx:id="jobID" prefWidth="36.0" text="ID" />
+                                        <TableColumn fx:id="date" prefWidth="84.0" text="Date" />
+                                          <TableColumn fx:id="wage" prefWidth="58.0" text="Wage" />
+                                          <TableColumn fx:id="location" prefWidth="79.0" text="Location" />
+                                      </columns>
+                                    </TableView>
+                                    <Label layoutX="70.0" layoutY="295.0" text="Double-click row to view details" textFill="#fd3a2d" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab id="myAccount" closable="false" style="-fx-background-color: #FD3A2D;" text="My Account">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <Label layoutX="133.0" layoutY="112.0" text="User ID" textFill="WHITE">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Button layoutX="227.0" layoutY="442.0" mnemonicParsing="false" onAction="#loginScene" prefHeight="25.0" prefWidth="67.0" style="-fx-background-color: #FD3A2D;" text="Logout">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Button>
+                                    <Label layoutX="137.0" layoutY="174.0" text="Name" textFill="WHITE">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="110.0" layoutY="308.0" text="Phone Number" textFill="WHITE">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="uID" editable="false" layoutX="80.0" layoutY="139.0" />
+                                    <TextField fx:id="uName" editable="false" layoutX="80.0" layoutY="200.0" />
+                                    <TextField fx:id="uTel" editable="false" layoutX="80.0" layoutY="333.0" />
+                                    <Button fx:id="account" layoutX="121.0" layoutY="375.0" mnemonicParsing="false" onAction="#editAccountDets" prefHeight="25.0" prefWidth="67.0" style="-fx-background-color: #FD3A2D;" text="Edit">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Button>
+                                    <Label layoutX="139.0" layoutY="239.0" text="Email" textFill="WHITE">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="uEmail" editable="false" layoutX="80.0" layoutY="266.0" />
+                                    <Label layoutX="68.0" layoutY="56.0" text="Account Details" textFill="WHITE">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Label>
+                                    <Button fx:id="back" disable="true" layoutX="21.0" layoutY="442.0" mnemonicParsing="false" onAction="#backBtn" prefHeight="25.0" prefWidth="67.0" style="-fx-background-color: #FD3A2D;" text="Back" visible="false">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                    </tabs>
+                  </TabPane>
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+   </children>
+</AnchorPane>

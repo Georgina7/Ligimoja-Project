@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="509.0" prefWidth="306.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trial.fxml.EmployerJobDetailsController">
+   <children>
+      <TitledPane alignment="CENTER" animated="false" collapsible="false" text="LIGIMOJA">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="509.0" prefWidth="306.0" style="-fx-background-color: #281E5D;">
+               <children>
+                  <Label layoutX="100.0" layoutY="22.0" text="Job Details" textFill="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="111.0" layoutY="54.0" text="Cleaner Name" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="104.0" layoutY="110.0" text="Cleaner Contact" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="127.0" layoutY="167.0" text="Location" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="clName" editable="false" layoutX="79.0" layoutY="74.0" />
+                  <TextField fx:id="clContact" editable="false" layoutX="79.0" layoutY="130.0" />
+                  <TextField fx:id="location" editable="false" layoutX="81.0" layoutY="187.0" />
+                  <Button layoutX="68.0" layoutY="459.0" mnemonicParsing="false" onAction="#delJob" prefHeight="25.0" prefWidth="65.0" style="-fx-background-color: #FD3A2D;" text="Delete" />
+                  <Button layoutX="174.0" layoutY="459.0" mnemonicParsing="false" onAction="#employerLandingScene" prefHeight="25.0" prefWidth="65.0" style="-fx-background-color: #FD3A2D;" text="Back" />
+                  <Label layoutX="135.0" layoutY="228.0" text="Estate" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="estate" editable="false" layoutX="79.0" layoutY="248.0" />
+                  <TextField fx:id="pay" editable="false" layoutX="79.0" layoutY="361.0" />
+                  <Label layoutX="106.0" layoutY="286.0" text="House Number" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="142.0" layoutY="341.0" text="Pay" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="140.0" layoutY="395.0" text="Date" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="hseNo" editable="false" layoutX="81.0" layoutY="306.0" />
+                  <TextField fx:id="date" editable="false" layoutX="79.0" layoutY="415.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+   </children>
+</AnchorPane>

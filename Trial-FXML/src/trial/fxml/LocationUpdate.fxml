@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="509.0" prefWidth="306.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trial.fxml.LocationUpdateController">
+   <children>
+      <TitledPane alignment="CENTER" animated="false" collapsible="false" text="LIGIMOJA">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="509.0" prefWidth="306.0" style="-fx-background-color: #281E5D;">
+               <children>
+                  <Label layoutX="90.0" layoutY="80.0" text="Edit Location" textFill="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="106.0" layoutY="144.0" text="Location Name" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="114.0" layoutY="215.0" text="Estate Name" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="106.0" layoutY="285.0" text="House Number" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="loc" layoutX="79.0" layoutY="172.0" />
+                  <TextField fx:id="est" layoutX="79.0" layoutY="242.0" />
+                  <TextField fx:id="hs" layoutX="79.0" layoutY="312.0" />
+                  <Button layoutX="118.0" layoutY="378.0" mnemonicParsing="false" onAction="#updateLoc" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: #FD3A2D;" text="Update" />
+                  <Button layoutX="220.0" layoutY="461.0" mnemonicParsing="false" onAction="#employerLandingScene" prefHeight="25.0" prefWidth="65.0" style="-fx-background-color: #FD3A2D;" text="Back" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+   </children>
+</AnchorPane>
